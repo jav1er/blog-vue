@@ -1,0 +1,20 @@
+<div class="general">
+  <div class="center">
+    <section id="content">
+      <h2 class="subheader">Peliculas</h2>
+      <h3 v-if="favoriteMovie">
+        Esta es la favorita: {{ favoriteMovie.title }}
+      </h3>
+      <div id="articles">
+        <div v-for="pelicula of arrayPeliculas" :key="pelicula.title">
+          <movieComp
+            :objectPelicula="pelicula"
+            @capturefavoriteMovieEvent="capturefavoriteMovieMethod"
+          ></movieComp>
+        </div>
+      </div>
+    </section>
+    <sidebar></sidebar>
+    <div class="clearfix"></div>
+  </div>
+</div>

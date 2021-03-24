@@ -1,0 +1,4 @@
+<div id="slider" :class="{'slider-small': !home}">
+  <h1>{{ text }}</h1>
+  <router-link to="/blog" class="btn-white" v-if="home">Ir al blog</router-link>
+</div>

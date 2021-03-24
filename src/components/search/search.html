@@ -1,0 +1,20 @@
+<div class="general">
+  <slider :text="`busqueda: ${searchString}`"></slider>
+  <div class="center">
+    <section id="content">
+      <h1 class="subheader">
+        {{articles? 'Artículos encontrados': 'Sin resultados'}}
+      </h1>
+
+      <div id="articles" v-if="articles">
+        <articles :articles="articles"></articles>
+      </div>
+      <div v-if="!articles">
+        No hay artículos que coincidan con tu busqueda
+      </div>
+      <h1>{{ select }}</h1>
+    </section>
+    <sidebar></sidebar>
+    <div class="clearfix"></div>
+  </div>
+</div>

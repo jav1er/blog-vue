@@ -1,0 +1,11 @@
+div.x {
+ transition-duration: 1s;
+ transition-timing-function: linear;
+ width: 100px ;
+ height: 100px;
+ background: red;
+}
+
+.c{
+ width: 0px !important;
+}

@@ -1,0 +1,13 @@
+<div class="general">
+  <slider text="Bienvenido" :home="true"></slider>
+  <div class="center">
+    <section id="content">
+      <h2 class="subheader">Últimos artículos</h2>
+      <div id="articles" v-if="articlesArry">
+        <articles :articles="articlesArry"></articles>
+      </div>
+    </section>
+    <sidebar></sidebar>
+    <div class="clearfix"></div>
+  </div>
+</div>

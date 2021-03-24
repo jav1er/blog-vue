@@ -1,0 +1,36 @@
+<!-- <header @mouseleave="mouseleave($event)" @mouseenter="mouseenter($event)"  id="header"> -->
+<header @mouseleave="mouseleave($event)" id="header">
+  <div class="center">
+
+    <div id="logo">
+      <img src="../../assets/logo.png" class="app-logo" alt="Logotipo" />
+      <span id="brand">Vue</span>
+    </div>
+
+    <nav id="menu">
+      <ul>
+        <li>
+          <router-link to="/home" active-class="active">inicio</router-link>
+        </li>
+        <li>
+          <router-link to="/blog" active-class="active">Blog</router-link>
+        </li>
+        <li>
+          <router-link to="/formulario" active-class="active">
+            formulario
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/pagina" active-class="active">pagina</router-link>
+        </li>
+        <li>
+          <router-link to="/movies" active-class="active">
+            peliculas
+          </router-link>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="clearfix"></div>
+  </div>
+</header>
